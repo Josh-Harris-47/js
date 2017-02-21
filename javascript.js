@@ -17,9 +17,11 @@ var outer = function(){
   return function(){
     counter++;
     console.log(counter);
+    alert("counter was clicked");
   };
 };
 var countUp = outer();
-countUp();-->1
-countUp();-->2
-countUp();-->3
+$(".box").click(countUp);
+// countUp();-->1
+// countUp();-->2
+// countUp();-->3
