@@ -1,0 +1,24 @@
+h1 {
+  color:red;
+  text-align: center;
+}
+.container{
+  height:max-content;
+  width:100vw;
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+
+}
+.box {
+  height:300px;
+  width:300px;
+  padding:10px;
+  margin: 10px;
+  color:black;
+  border:1px red solid;
+  background-color: #b4da55;
+
+}
