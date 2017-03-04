@@ -13,12 +13,28 @@ h1 {
 
 }
 .box {
-  height:300px;
-  width:300px;
+  height:250px;
+  width:250px;
   padding:10px;
   margin: 10px;
   color:black;
   border:1px red solid;
   background-color: #b4da55;
 
+}
+.clock{
+  display: flex;
+  height:max-content;
+  width:100vw;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  font-size: 100px;
+}
+.circle{
+  height:150px;
+  width:150px;
+  border-radius: 100px;
+  background-color: black;
+  opacity: .15;
 }
