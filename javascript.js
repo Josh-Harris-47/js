@@ -1,9 +1,10 @@
-setInterval(function(){
-  var d = new Date();
-  var h = d.getHours();
-  var m = d.getMinutes();
-  var s = d.getSeconds();
-  var time = d.toLocaleTimeString();
-  console.log(time);
-  document.getElementsByClassName('circle').innerText = time;
-}, 1000);
+var closure = function(){
+  var balance = 0;
+  return function(trn){
+    balance = balance + trn;
+    return balance;
+  }
+}
+var account = closure();
+console.log(account(20));
+console.log(account(-30));
