@@ -98,3 +98,16 @@ setInterval(function clock(){
 //  console.log(temp);
 // }
 // console.log(code("this is a string"));
+
+// closure function practice
+// Joshua Harris [7:13 PM] 
+// var closure = function(){
+//  var balance = 0;
+//  return function(trn){
+//    balance = balance + trn;
+//    return balance;
+//  }
+// }
+// var account = closure();
+// console.log(account(20));
+// console.log(account(-30));
