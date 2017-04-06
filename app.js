@@ -100,7 +100,7 @@ setInterval(function clock(){
 // console.log(code("this is a string"));
 
 // closure function practice
-// Joshua Harris [7:13 PM] 
+// Joshua Harris [7:13 PM]
 // var closure = function(){
 //  var balance = 0;
 //  return function(trn){
@@ -111,3 +111,9 @@ setInterval(function clock(){
 // var account = closure();
 // console.log(account(20));
 // console.log(account(-30));
+
+var vanilla = function(){
+  console.log('click');
+  body = $('body');
+  body.css('backgroundColor','yellow')
+}
