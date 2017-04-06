@@ -24,13 +24,16 @@ h1 {
 }
 .clock{
   display: flex;
-  height:max-content;
-  width:max-content;
+  height:200px;
+  width:70vw;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   color:black;
-  opacity: .9;
+  opacity: .95;
+  border:1px solid #b4da55;
   border-radius: 20px;
+  background-color: red;
   display: ;
 }
 

@@ -117,3 +117,11 @@ var vanilla = function(){
   body = $('body');
   body.css('backgroundColor','yellow')
 }
+var colorChanger = function(){
+  document.body.addEventListener('click',function(){
+    var color = 'rgb('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+')';
+    console.log(color);
+    document.body.style.backgroundColor = color;
+  });
+}
+colorChanger();
