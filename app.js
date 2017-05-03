@@ -26,8 +26,6 @@ var timeAngles = function(){
     seconds: secAngle
   }};
 
-console.log(timeAngles());
-
 setInterval(function clock(){
   var hour = document.querySelector("line");
   var min = document.getElementById('min');
@@ -112,16 +110,150 @@ setInterval(function clock(){
 // console.log(account(20));
 // console.log(account(-30));
 
-var vanilla = function(){
-  console.log('click');
-  body = $('body');
-  body.css('backgroundColor','yellow')
+
+// color changing background color on click function
+
+
+// var vanilla = function(){
+//   console.log('click');
+//   body = $('body');
+//   body.css('backgroundColor','yellow')
+// }
+
+//random background color function
+//currently configured for a dom button
+// var colorChanger = function(){
+//   document.body.getElementsByClassName('scamButton')[0].addEventListener('mouseenter',function(e){
+//     var color = 'rgb('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+')';
+//     console.log(color);
+//     document.body.getElementsByClassName('scamButton')[0].style.backgroundColor = color;
+//   });
+// }
+// colorChanger();
+
+
+//keydown event listener
+// function move(){
+//   document.body.addEventListener('keydown',function(e){
+//     if(e.key == "w"){
+//       console.log("up");
+//     }
+//   })
+// }
+// move();
+
+//scam button template
+// var scam = function(){
+//   var button = document.body.getElementsByClassName('scamButton')[0];
+//   button.addEventListener('mouseenter',function(e){
+//   console.log(e);
+//   console.log(e.fromElement.style)
+//   console.log("SCAM");
+//   button.style.position = "absolute";
+//   button.style.top = Math.floor(Math.random()*100)+"vh";
+//   button.style.left = Math.floor(Math.random()*100)+"vh";
+//
+//   });
+// }
+// scam();
+//
+// var pageInfo = {
+//   url: "http://www.kidsplay.com/funkytown",
+//   device: "desktop",
+//   pageName: "Funky Town",
+//   items: [
+//     {
+//       name: "DodgyBall",
+//       idNum: "345890",
+//       description: "this is a super dodgy ball",
+//       color: "purple",
+//       material: "rubber",
+//       price: 34.29
+//     },
+//     {
+//       name: "Moon Boots",
+//       idNum: "789437/-9",
+//       description: "walk on the moon",
+//       color: "black",
+//       material: "synthetic acrylic",
+//       price: 109.24
+//     },
+//     {
+//       name: "Stick",
+//       idNum: "091283-stick",
+//       description: "this is literally a stick",
+//       color: "brown",
+//       material: "wood",
+//       price: 4.99
+//     },
+//     {
+//       name: "Calipso Frizbee",
+//       idNum: "923791",
+//       description: "round disc for throwing",
+//       color: "rainbow",
+//       material: "plastic",
+//       price: 34.29
+//     }
+//   ]
+// };
+//
+// var converter = function(){
+//   var target = pageInfo.items;
+//   var fancyItems = [];
+//
+//   for(var i = 0; i < target.length; i++){
+//     var accepted = [0,1,2,3,4,5,6,7,8,9];
+//
+//     for(var j = 0; j < target[i].idNum.length; j++){
+//       var counter = 0;
+//         for(var n = 0; n < accepted.length; n++){
+//           if(target[i].idNum[j] == accepted[n]){
+//             // console.log(target[i].idNum[j]);
+//           }else {
+//             counter += 1;
+//               if(counter == 10){
+//                 var newnumber = target[i].idNum;
+//                 newnumber.slice(j,j+1);
+//                 console.log(newnumber)
+//
+//               }
+//           }
+//         }
+//       }
+//
+//     // console.log(target[i].idNum)
+//
+//     var newObject = {
+//       idNum: target[i].idNum,
+//       color: target[i].color,
+//       price: target[i].price
+//     }
+//
+//     fancyItems.push(newObject);
+//   }
+//   console.log(fancyItems);
+// }
+// converter();
+//
+
+//creat a function that takes in an array of numbers and returns a count of
+//even and odd numbers
+var oddoreven = function(){
+  var list = [1,3,2,6,23,7,4,35,6,72,5,36,4,52,7,27,2,26,456,74,3456,2,34,5,3];
+  var even = 0;
+  var odd = 0;
+  for(var i = 0; i < list.length; i++){
+    if(list[i]%2 == 0){
+      even += 1;
+    }else{
+      odd += 1;
+    }
+  }
+  console.log("even numbers: "+even+" odd numbers: "+odd);
 }
-var colorChanger = function(){
-  document.body.addEventListener('click',function(){
-    var color = 'rgb('+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+','+Math.floor(Math.random()*255)+')';
-    console.log(color);
-    document.body.style.backgroundColor = color;
-  });
-}
-colorChanger();
+oddoreven();
+
+var inputcheck = function(){
+
+};
+var number = document.getElementsByClassName('input')[0].value;

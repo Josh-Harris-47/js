@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 h1 {
   color:red;
   text-align: center;
@@ -20,6 +24,7 @@ h1 {
   color:black;
   border:1px red solid;
   background-color: #b4da55;
+  border-radius: 20px;
 
 }
 .clock{
@@ -36,7 +41,32 @@ h1 {
   background-color: red;
   display: ;
 }
+.scamButton{
+  position: absolute;
+  padding: 10px;
 
+  z-index: 1;
+}
+.evenodd{
+  width: 100vw;
+  height: max-content;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.check{
+  width: 100vw;
+}
+pre{
+  height: 20px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  overflow-x: auto;
+  overflow-y: auto;
+}
 /*.circle{
   height:150px;
   width:150px;
